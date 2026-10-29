@@ -1,0 +1,66 @@
+:root { color-scheme: dark; --voxen-gold: #4F7CFF; --voxen-cyan: #00ffff; }
+html { background: #101010; scroll-behavior: smooth; }
+body { margin: 0; background: #101010; color: #f4f4f5; font-family: "Space Grotesk", sans-serif; }
+button, input, textarea, select { font: inherit; }
+button, [role="button"], [data-highlight="true"] { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #4F7CFF !important; outline-offset: 5px; }
+.voxen-experience, .voxen-testimonials, .voxen-counter { display: contents; }
+.voxen-nav-desktop { display: contents; }
+.voxen-nav-tablet, .voxen-nav-mobile { display: none; }
+.voxen-faq { width: 100%; cursor: pointer; }
+.voxen-faq > div { width: 100% !important; }
+.voxen-header [role="button"] { cursor: pointer; }
+.voxen-blob { width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 6px; }
+.voxen-blob canvas, .voxen-blob img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+.voxen-reveal-ready { opacity: 0; transform: translateY(40px); transition: opacity 800ms cubic-bezier(.22,1,.36,1), transform 900ms cubic-bezier(.22,1,.36,1); transition-delay: var(--reveal-delay, 0ms); }
+.voxen-reveal-ready[data-voxen-reveal="word"] { transform: translateY(60px); }
+.voxen-reveal-ready.voxen-revealed { opacity: 1; transform: none; }
+.voxen-honeypot { position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; overflow: hidden !important; pointer-events: none; }
+.voxen-form-status { flex-basis: 100%; width: 100%; color: #4F7CFF; font-size: 14px; line-height: 1.5; padding: 8px 0; margin: 0; }
+.voxen-form-status.error { color: #ffadad; }
+form[aria-busy="true"] button[type="submit"] { opacity: .5; pointer-events: none; }
+.voxen-search-backdrop { position: fixed; z-index: 10000; inset: 0; background: #ffffff4d; display: flex; align-items: flex-start; justify-content: center; padding: 21.5vh 20px 30px; box-sizing: border-box; }
+.voxen-search-dialog { width: 500px; max-width: 100%; max-height: min(496px, calc(100dvh - 60px)); background: #161718; color: white; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 40px #0003; animation: voxen-dialog-in 250ms cubic-bezier(.22,1,.36,1); }
+.voxen-search-input { display: flex; align-items: center; flex-shrink: 0; padding: 12px 20px; gap: 12px; }
+.voxen-search-input svg { flex-shrink: 0; }
+.voxen-search-input input { border: 0; outline: 0 !important; background: transparent; color: white; width: 100%; font-size: 16px; line-height: 2em; height: 2em; padding: 0; }
+.voxen-search-input input::placeholder { color: white; opacity: 1; }
+.voxen-search-input button { border: 0; background: transparent; color: white; cursor: pointer; font-size: 24px; padding: 0 3px; }
+.voxen-search-results { list-style: none; margin: 0; padding: 0; overflow-y: auto; overscroll-behavior: contain; }
+.voxen-search-results li { margin: 0; padding: 0; border-top: 1px solid #2b2b2b; }
+.voxen-search-results a { display: block; padding: 16px 20px; text-decoration: none; color: #fff; }
+.voxen-search-results h3 { margin: 0 0 6px; font-size: 16px; font-weight: 500; line-height: 1.4; }
+.voxen-search-results p { margin: 0; font-size: 12px; line-height: 1.4; color: #b6b7be; overflow-wrap: anywhere; }
+.voxen-search-results .is-active { background: #242527; }
+.voxen-search-empty { padding: 20px !important; color: #b6b7be; font-size: 15px; }
+.voxen-video-backdrop { position: fixed; inset: 0; z-index: 10001; background: #000e; display: flex; align-items: center; justify-content: center; padding: 64px 30px; box-sizing: border-box; animation: voxen-dialog-in 250ms ease-out; }
+.voxen-video-backdrop video { width: min(1100px, 100%); max-height: calc(100dvh - 128px); border-radius: 24px; background: #000; }
+.voxen-video-close { position: absolute; top: 24px; right: 30px; width: 44px; height: 44px; color: white; border: 1px solid #ffffff4d; background: #161718; border-radius: 50%; font-size: 30px; cursor: pointer; line-height: 1; }
+.voxen-skip-link { position: fixed; top: -80px; left: 20px; z-index: 20000; background: #4F7CFF; color: #101010; padding: 12px 20px; border-radius: 4px; text-decoration: none; }
+.voxen-skip-link:focus { top: 12px; }
+.framer-MtIQA .framer-1lcqtpo, .framer-MtIQA .framer-xjwkr6, .framer-WC7Sl .framer-1prmhwb, .framer-V5ZfY .framer-1prmhwb, .framer-h5n52 .framer-7knwir { transition: all 350ms cubic-bezier(.44,0,.56,1); }
+.framer-hXEv2 img, .framer-8D2Al img { transition: transform 650ms cubic-bezier(.22,1,.36,1); }
+.framer-hXEv2:hover img, .framer-8D2Al:hover img { transform: scale(1.045); }
+.framer-hXEv2:hover .framer-1t0d2d4 { background: #4F7CFF !important; transition: background 300ms; }
+.framer-hXEv2:hover .framer-1t0d2d4 h3 { color: #101010 !important; }
+.framer-9plnf { transition: background-color 400ms, border-color 400ms; }
+.framer-9plnf:hover { background-color: #1b1b1b !important; }
+.framer-F2UJd [data-framer-name="Indicator Pulse"] { animation: voxen-play-pulse 2s ease-out infinite; }
+@keyframes voxen-play-pulse { from { transform: scale(1); opacity: .4; } to { transform: scale(1.4); opacity: 0; } }
+@keyframes voxen-dialog-in { from { opacity: 0; transform: translateY(-12px) scale(.98); } to { opacity: 1; transform: none; } }
+@media (min-width: 768px) and (max-width: 1359.98px) { .voxen-nav-desktop { display: none; } .voxen-nav-tablet { display: contents; } }
+@media (max-width: 767.98px) {
+  .voxen-faq .framer-auQeS .framer-1016fcu { padding: 24px 16px 17px; }
+  .voxen-faq .framer-auQeS .framer-bzgjix { padding: 16px; }
+  .voxen-nav-desktop, .voxen-nav-tablet { display: none; }
+  .voxen-nav-mobile { display: contents; }
+  .voxen-search-backdrop { padding-top: 120px; }
+  .voxen-video-backdrop { padding: 64px 16px; }
+  .voxen-video-backdrop video { border-radius: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .voxen-reveal-ready { opacity: 1; transform: none; transition: none; }
+  .voxen-search-dialog, .voxen-video-backdrop { animation: none; }
+  .framer-F2UJd [data-framer-name="Indicator Pulse"] { animation: none; }
+}
